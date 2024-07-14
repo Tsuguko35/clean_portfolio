@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 :root {
   --black: #000000;
   --text: #3d3d3d;
@@ -79,23 +80,23 @@ input[type="number"] {
   -ms-appearance: textfield;
 }
 
-.pages {
-  padding-top: 80px;
-}
-
 .wrapper{
-  padding: 100px;
+  width: 100%;
+  padding: 180px 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
   max-width: 1536px;
 }
 
 @media only screen and (max-width: 1024px){
   .wrapper{
-    padding: 50px;
+    padding: 180px 50px;
   }
 }
 
 @media only screen and (max-width: 425px){
   .wrapper{
-    padding: 20px;
+    padding: 180px 20px;
   }
 }
