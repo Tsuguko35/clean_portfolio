@@ -1,0 +1,101 @@
+#landingPage{
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#landingPage > .wrapper > .text-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#landingPage > .wrapper > .text-content > p{
+    width: 100%;
+    max-width: 480px;
+    color: var(--grey);
+    font-size: 36px;
+    font-weight: 300;
+    pointer-events: none;
+}
+
+#landingPage > .wrapper > .text-content > p.title{
+    font-size: 72px;
+    color: var(--text);
+    letter-spacing: -5px;
+    font-weight: bold;
+}
+
+
+#landingPage > .wrapper > .text-content > p.cursive{
+    color: var(--light-grey);
+    font-weight: 300;
+    font-size: 24px;
+    opacity: 1;
+    text-align: right;
+    width: 100%;
+}
+
+#landingPage > .wrapper > .actions{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#landingPage > .wrapper > .actions > .action-button{
+    position: relative;
+    min-width: 170px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border: 1px solid var(--light-grey);
+    color: var(--grey);
+    border-radius: 4px;
+    transition: all 250ms ease-in-out;
+}
+
+#landingPage > .wrapper > .actions > .action-button::after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 0;
+    background-color: var(--text);
+    transition: height 250ms ease-in-out;
+    z-index: -1;
+}
+
+
+#landingPage > .wrapper > .actions > .action-button:hover::after{
+    height: 100%;
+}
+
+#landingPage > .wrapper > .actions > .action-button:hover{
+    border-color: var(--text);
+    color: var(--white);
+}
+
+@media only screen and (max-width: 767px){
+    #landingPage > .wrapper > .text-content > p,
+    #landingPage > .wrapper > .text-content > p.cursive{
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 425px){
+    #landingPage > .wrapper > .actions{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
