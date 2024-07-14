@@ -82,7 +82,8 @@ input[type="number"] {
 
 .wrapper{
   width: 100%;
-  padding: 180px 100px;
+  padding: 50px 100px;
+  padding-top: 90px;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -91,12 +92,14 @@ input[type="number"] {
 
 @media only screen and (max-width: 1024px){
   .wrapper{
-    padding: 180px 50px;
+    padding: 50px 50px;
+    padding-top: 90px;
   }
 }
 
 @media only screen and (max-width: 425px){
   .wrapper{
-    padding: 180px 20px;
+    padding: 20px 20px;
+    padding-top: 90px;
   }
 }
