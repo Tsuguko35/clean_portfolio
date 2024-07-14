@@ -84,3 +84,18 @@
     border-color: var(--text);
     color: var(--white);
 }
+
+@media only screen and (max-width: 767px){
+    #landingPage > .wrapper > .text-content > p,
+    #landingPage > .wrapper > .text-content > p.cursive{
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 425px){
+    #landingPage > .wrapper > .actions{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
