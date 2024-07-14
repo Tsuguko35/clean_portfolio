@@ -36,7 +36,6 @@
     color: var(--light-grey);
     font-weight: 300;
     font-size: 24px;
-    opacity: 1;
     text-align: right;
     width: 100%;
 }
@@ -60,7 +59,10 @@
     border: 1px solid var(--light-grey);
     color: var(--grey);
     border-radius: 4px;
+    background: transparent;
+    backdrop-filter: blur(2px);
     transition: all 250ms ease-in-out;
+    gap: 5px;
 }
 
 #landingPage > .wrapper > .actions > .action-button::after{
@@ -83,6 +85,43 @@
 #landingPage > .wrapper > .actions > .action-button:hover{
     border-color: var(--text);
     color: var(--white);
+}
+
+#landingPage > .wrapper > .actions > .action-button > svg{
+    min-width: 14px;
+    min-height: 14px;
+}
+
+#landingPage > .wrapper > .actions > .action-button > svg *{
+    color: var(--text);
+    transition: color 250ms ease-in-out;
+}
+
+#landingPage > .wrapper > .actions > .action-button:hover,
+#landingPage > .wrapper > .actions > .action-button:hover > svg *{
+    color: var(--white);
+}
+
+#landingPage > .wrapper > .socials{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#landingPage > .wrapper > .socials > a > svg{
+    min-width: 25px;
+    min-height: 25px;
+}
+
+#landingPage > .wrapper > .socials > a > svg *{
+    color: var(--grey);
+    transition: color 250ms ease-in-out;
+}
+
+#landingPage > .wrapper > .socials > a:hover > svg *{
+    color: var(--text);
 }
 
 @media only screen and (max-width: 767px){
