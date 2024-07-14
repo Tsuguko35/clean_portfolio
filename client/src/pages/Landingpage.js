@@ -3,8 +3,12 @@ import { Stars } from "../components";
 import "../styles/landingPage.css";
 import { Link } from "react-router-dom";
 import Typewriter from "typewriter-effect";
+import { GetWindowWidth } from "../utils";
+import { MdOutlineFileDownload } from "react-icons/md";
+import { FaFacebookSquare, FaLinkedin } from "react-icons/fa";
 
 function Landingpage() {
+  const windowWidth = GetWindowWidth();
   return (
     <div id="landingPage" className="landingPage">
       <Stars />
@@ -23,13 +27,26 @@ function Landingpage() {
             />
           </p>
         </div>
-        <div className="socials"></div>
         <div className="actions">
           <Link className="action-button" to={"/Contact"}>
             Contact Me!
           </Link>
           <Link className="action-button" to={"/Projects"}>
             See My Projects!
+          </Link>
+          {windowWidth < 768 && (
+            <button className="action-button" to={"/Projects"}>
+              <MdOutlineFileDownload />
+              Resume
+            </button>
+          )}
+        </div>
+        <div className="socials">
+          <Link to={"https://www.facebook.com/tsuguko34"} target="_blank">
+            <FaFacebookSquare />
+          </Link>
+          <Link to={"www.linkedin.com/in/jazphercarpio"} target="_blank">
+            <FaLinkedin />
           </Link>
         </div>
       </div>
