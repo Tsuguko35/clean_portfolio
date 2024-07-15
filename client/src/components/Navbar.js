@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { routes } from "../config";
 import "../styles/navbar.css";
 import "../styles/small-components/hamburgerIcon.css";
@@ -10,14 +10,21 @@ function Navbar() {
   const location = useLocation();
   const windowWidth = GetWindowWidth();
   const [openNavMenu, setOpenNavMenu] = useState(false);
+  const paths = ["/projects", "/contact", "/about"];
+  const haveWhiteBackground = paths.find(
+    (path) => location.pathname.toLowerCase() === path
+  );
 
   const isActive = !routes.some((route) => {
-    console.log(location.pathname, route.path);
     return location.pathname.toLowerCase() === route.path.toLowerCase();
   });
 
+  useEffect(() => {
+    setOpenNavMenu(false);
+  }, [location.pathname]);
+
   return (
-    <nav id="navbar" className="navbar">
+    <nav id="navbar" className={`navbar ${haveWhiteBackground ? "white" : ""}`}>
       <div className="wrapper for-navbar">
         <Link to={"/"} className="logo">
           <img

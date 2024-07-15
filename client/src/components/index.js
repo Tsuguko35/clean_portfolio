@@ -1,4 +1,5 @@
 import Navbar from "./Navbar";
 import Stars from "./Stars";
+import ProjectsGrid from "./Projects/ProjectsGrid";
 
-export { Navbar, Stars };
+export { Navbar, Stars, ProjectsGrid };
