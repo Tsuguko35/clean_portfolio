@@ -7,6 +7,7 @@
   --grey: #848484;
   --light-grey: #bbbbbb;
   --white: #ffffff;
+  --gradient-font-color: linear-gradient(to right, var(--light-grey) 5%, var(--grey) 95%);
 }
 
 /* Global */
@@ -88,6 +89,14 @@ input[type="number"] {
   flex-direction: column;
   gap: 30px;
   max-width: 1536px;
+}
+
+.page-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media only screen and (max-width: 1024px){

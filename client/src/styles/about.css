@@ -1,0 +1,134 @@
+#about > .wrapper > header{
+    width: 100%;
+    padding: 50px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+}
+
+#about > .wrapper > header > .text-content{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#about > .wrapper > header > .text-content > p{
+    font-weight: bold;
+    font-size: 86px;
+    background: var(--gradient-font-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+#about > .wrapper > header > .image{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 4px;
+   
+}
+
+#about > .wrapper > header > .image::after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    top: 0;
+    left: 0;
+    background: linear-gradient(to top, white 2%, rgba(255, 255, 255, 0));
+}
+
+#about > .wrapper > header > .image > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(1);
+}
+
+#about > .wrapper > .title-label{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+}
+
+#about > .wrapper > .title-label > .title{
+    font-size: 42px;
+    font-weight: bold;
+    background: var(--gradient-font-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+#about > .wrapper > .title-label > .label{
+    width: 200px;
+    position: relative;
+    font-weight: 300;
+    font-style: italic;
+    font-family: 'Pacifico';
+    color: var(--light-grey);
+    transform: translateX(50px);
+}
+
+#about > .wrapper > .title-label > .label::after{
+    position: absolute;
+    content: '';
+    width: 40px;
+    height: 1px;
+    left: -50px;
+    top: 50%;
+    background-color: var(--light-grey);
+}
+
+#about > .wrapper > .paragraph{
+    width: 100%;
+    line-height: 180%;
+    font-size: 22px;
+    font-weight: bold;
+    background: var(--gradient-font-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+@media only screen and (max-width: 1280px){
+    #about > .wrapper > header{
+        gap: 100px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    #about > .wrapper > header{
+        gap: 50px;
+    }
+
+    #about > .wrapper > header > .text-content > p{
+        font-size: 62px;
+    }
+    
+    #about > .wrapper > header > .image{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    #about > .wrapper > header{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #about > .wrapper > header > .text-content > p{
+        font-size: 46px;
+    }
+
+    #about > .wrapper > .paragraph{
+        font-size: 18px;
+        text-align: justify;
+    }
+}

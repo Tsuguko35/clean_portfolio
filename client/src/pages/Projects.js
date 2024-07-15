@@ -7,7 +7,7 @@ function Projects() {
     document.title = "Jazpher Carpio | Projects";
   }, []);
   return (
-    <div id="projects" className="projects">
+    <div id="projects" className="projects page-container">
       <div className="wrapper">
         <p className="title">Projects</p>
 

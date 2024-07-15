@@ -1,0 +1,58 @@
+#skills-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#skills-container > .skills{
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+#skills-container > .skills > .skill{
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid var(--light-grey);
+    border-radius: 4px;
+    cursor: default;
+    transition: all 250ms ease-in-out;
+}
+
+#skills-container > .skills > .skill > svg{
+    width: 15px;
+    height: 15px;
+    min-width: 15px;
+    min-height: 15px;
+}
+
+#skills-container > .skills > .skill > svg * {
+    color: var(--light-grey);
+    transition: all 250ms ease-in-out;
+}
+
+#skills-container > .skills > .skill > p{
+    color: var(--light-grey);
+    font-size: 14px;
+    transition: all 250ms ease-in-out;
+}
+
+#skills-container > .skills > .skill:hover{
+    background-color: var(--text);
+    border-color: var(--text);
+}
+
+#skills-container > .skills > .skill:hover > p,
+#skills-container > .skills > .skill:hover > svg * {
+    color: var(--white);
+}

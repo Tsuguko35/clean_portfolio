@@ -1,4 +1,4 @@
-import { Landingpage, Projects } from "../pages";
+import { About, Landingpage, Projects } from "../pages";
 
 const routes = [
   {
@@ -15,7 +15,7 @@ const routes = [
   },
   {
     path: "/About",
-    component: <Landingpage />,
+    component: <About />,
   },
   {
     path: "/Contact",
