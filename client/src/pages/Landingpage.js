@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Stars } from "../components";
 import "../styles/landingPage.css";
 import { Link } from "react-router-dom";
@@ -9,6 +9,10 @@ import { FaFacebookSquare, FaLinkedin } from "react-icons/fa";
 
 function Landingpage() {
   const windowWidth = GetWindowWidth();
+
+  useEffect(() => {
+    document.title = "Jazpher Carpio";
+  }, []);
   return (
     <div id="landingPage" className="landingPage">
       <Stars />

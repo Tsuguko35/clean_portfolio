@@ -1,0 +1,120 @@
+#projectsGrid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+#projectsGrid > .project{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#projectsGrid > .project > .thumbnail{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color: #CDCDCD;
+    padding: 10px;
+}
+
+#projectsGrid > .project > .thumbnail > p{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-decoration: underline;
+    color: var(--white);
+    transition: all 250ms ease-in-out;
+}
+
+#projectsGrid > .project > .thumbnail:hover > p{
+    opacity: 1;
+    pointer-events: all;
+}
+
+#projectsGrid > .project > .thumbnail > img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#projectsGrid > .project > .project-details{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+#projectsGrid > .project > .project-details > .project-name{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#projectsGrid > .project > .project-details > .project-name:hover{
+    text-decoration: underline;
+}
+
+#projectsGrid > .project > .project-details > .project-description{
+    text-align: justify;
+    line-height: 150%;
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--grey);
+}
+
+#projectsGrid > .project > .tech-stack{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#projectsGrid > .project > .tech-stack > .tech{
+    padding: 10px 20px;
+    border: 1px solid var(--light-grey);
+    border-radius: 4px;
+    font-size: 14px;
+    color: var(--light-grey);
+    transition: all 250ms ease-in-out;
+    cursor: default;
+}
+
+#projectsGrid > .project > .tech-stack > .tech:hover{
+    color: var(--grey);
+    background-color: whitesmoke;
+    border-color: var(--grey);
+}
+
+@media only screen  and (max-width: 1024px){
+    #projectsGrid > .project > .thumbnail{
+        height: 300px;
+    }
+
+    #projectsGrid > .project > .project-details > .project-name{
+        font-size: 22px;
+    }
+}
+
+@media only screen  and (max-width: 768px){
+    #projectsGrid{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen  and (max-width: 425px){
+    #projectsGrid > .project > .project-details > .project-name{
+        font-size: 20px;
+    }
+}

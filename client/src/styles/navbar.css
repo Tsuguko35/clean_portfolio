@@ -6,10 +6,13 @@
     left: 0;
     display: flex;
     align-items: center;
-    justify-content: center;
-    background: transparent;
-    backdrop-filter: blur(3px);
+    justify-content: center;  
+    backdrop-filter: blur(2px);
     z-index: 995;
+}
+
+#navbar.white{
+    background: rgba(255, 255, 255, 0.8);
 }
 
 #navbar > .wrapper.for-navbar{
