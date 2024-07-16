@@ -6,6 +6,7 @@ import Typewriter from "typewriter-effect";
 import { GetWindowWidth } from "../utils";
 import { MdOutlineFileDownload } from "react-icons/md";
 import { FaFacebookSquare, FaLinkedin } from "react-icons/fa";
+import { DelayedLink } from "../components";
 import myCV from "../assets/Jazpher_Carpio_CV.pdf";
 function Landingpage() {
   const windowWidth = GetWindowWidth();
@@ -17,7 +18,7 @@ function Landingpage() {
     <div id="landingPage" className="landingPage">
       <Stars />
       <div className="wrapper">
-        <div className="text-content">
+        <div className="text-content animate">
           <p className="label">Hello I'm,</p>
           <p className="title">Jazpher Carpio</p>
           <p className="cursive">
@@ -31,13 +32,13 @@ function Landingpage() {
             />
           </p>
         </div>
-        <div className="actions">
-          <Link className="action-button" to={"/Contact"}>
+        <div className="actions animate">
+          <DelayedLink className="action-button" to={"/Contact"}>
             Contact Me!
-          </Link>
-          <Link className="action-button" to={"/Projects"}>
+          </DelayedLink>
+          <DelayedLink className="action-button" to={"/Projects"}>
             See My Projects!
-          </Link>
+          </DelayedLink>
           {windowWidth < 768 && (
             <a
               href={myCV}
@@ -49,7 +50,7 @@ function Landingpage() {
             </a>
           )}
         </div>
-        <div className="socials">
+        <div className="socials animate">
           <Link to={"https://www.facebook.com/tsuguko34"} target="_blank">
             <FaFacebookSquare />
           </Link>

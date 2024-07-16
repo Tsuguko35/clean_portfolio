@@ -9,7 +9,7 @@ function Projects() {
   return (
     <div id="projects" className="projects page-container">
       <div className="wrapper">
-        <p className="title">Projects</p>
+        <p className="title animate">Projects</p>
 
         {/* Projects List */}
         <ProjectsGrid />

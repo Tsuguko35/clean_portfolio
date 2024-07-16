@@ -2,10 +2,11 @@ import React, { useEffect, useState } from "react";
 import { routes } from "../config";
 import "../styles/navbar.css";
 import "../styles/small-components/hamburgerIcon.css";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { MdOutlineFileDownload } from "react-icons/md";
 import { GetWindowWidth } from "../utils";
 import myCV from "../assets/Jazpher_Carpio_CV.pdf";
+import DelayedLink from "./DelayedLink";
 
 function Navbar() {
   const location = useLocation();
@@ -24,19 +25,27 @@ function Navbar() {
     setOpenNavMenu(false);
   }, [location.pathname]);
 
+  useEffect(() => {
+    if (openNavMenu) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [openNavMenu]);
+
   return (
     <nav id="navbar" className={`navbar ${haveWhiteBackground ? "white" : ""}`}>
       <div className="wrapper for-navbar">
-        <Link to={"/"} className="logo">
+        <DelayedLink to={"/"} className="logo">
           <img
             src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1720936144/Clean_Portfolio/bhok94iojzabjs1ypd1q.webp"
             alt=""
           />
-        </Link>
+        </DelayedLink>
         {windowWidth >= 768 && (
           <ul className="navbar">
             <li>
-              <Link
+              <DelayedLink
                 to={"/"}
                 className={`nav-item ${
                   location.pathname.toLowerCase() === "/" || isActive
@@ -45,10 +54,10 @@ function Navbar() {
                 }`}
               >
                 Home
-              </Link>
+              </DelayedLink>
             </li>
             <li>
-              <Link
+              <DelayedLink
                 to={"/Projects"}
                 className={`nav-item ${
                   location.pathname.toLowerCase() === "/projects"
@@ -57,27 +66,27 @@ function Navbar() {
                 }`}
               >
                 Projects
-              </Link>
+              </DelayedLink>
             </li>
             <li>
-              <Link
+              <DelayedLink
                 to={"/About"}
                 className={`nav-item ${
                   location.pathname.toLowerCase() === "/about" ? "active" : ""
                 }`}
               >
                 About
-              </Link>
+              </DelayedLink>
             </li>
             <li>
-              <Link
+              <DelayedLink
                 to={"/Contact"}
                 className={`nav-item ${
                   location.pathname.toLowerCase() === "/contact" ? "active" : ""
                 }`}
               >
                 Contact
-              </Link>
+              </DelayedLink>
             </li>
             <li>
               <a
@@ -107,7 +116,7 @@ function Navbar() {
             </div>
             <ul className={`navbar mobile ${openNavMenu ? "open" : ""}`}>
               <li>
-                <Link
+                <DelayedLink
                   to={"/"}
                   className={`nav-item ${
                     location.pathname.toLowerCase() === "/" || isActive
@@ -116,10 +125,10 @@ function Navbar() {
                   }`}
                 >
                   Home
-                </Link>
+                </DelayedLink>
               </li>
               <li>
-                <Link
+                <DelayedLink
                   to={"/Projects"}
                   className={`nav-item ${
                     location.pathname.toLowerCase() === "/projects"
@@ -128,20 +137,20 @@ function Navbar() {
                   }`}
                 >
                   Projects
-                </Link>
+                </DelayedLink>
               </li>
               <li>
-                <Link
+                <DelayedLink
                   to={"/About"}
                   className={`nav-item ${
                     location.pathname.toLowerCase() === "/about" ? "active" : ""
                   }`}
                 >
                   About
-                </Link>
+                </DelayedLink>
               </li>
               <li>
-                <Link
+                <DelayedLink
                   to={"/Contact"}
                   className={`nav-item ${
                     location.pathname.toLowerCase() === "/contact"
@@ -150,7 +159,7 @@ function Navbar() {
                   }`}
                 >
                   Contact
-                </Link>
+                </DelayedLink>
               </li>
               <li>
                 <a

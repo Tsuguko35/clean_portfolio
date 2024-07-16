@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../styles/about.css";
 import { Skills } from "../components";
 
 function About() {
+  useEffect(() => {
+    document.title = "Jazpher Carpio | About";
+  }, []);
   return (
     <div id="about" className="about page-container">
       <div className="wrapper">
-        <header>
+        <header className="animate">
           <div className="text-content">
             <p>Hello,</p>
             <p>I'm Jazpher</p>
@@ -19,11 +22,11 @@ function About() {
             />
           </div>
         </header>
-        <div className="title-label">
+        <div className="title-label animate" style={{ animationDelay: "0.6s" }}>
           <p className="title">About</p>
           <p className="label">A little bit about who I am</p>
         </div>
-        <p className="paragraph">
+        <p className="paragraph animate" style={{ animationDelay: "0.6s" }}>
           I am a passionate Full Stack Developer with expertise in HTML, CSS,
           JavaScript, React.js, Node.js, PHP, MySQL, and MongoDB. My journey in
           web development has equipped me with a robust understanding of both
@@ -35,7 +38,7 @@ function About() {
           latest industry trends, ready to tackle innovative projects and
           deliver creative solutions.
         </p>
-        <div className="title-label">
+        <div className="title-label animate" style={{ animationDelay: "0.6s" }}>
           <p className="title">Skills</p>
           <p className="label">Skills and Proficiencies</p>
         </div>

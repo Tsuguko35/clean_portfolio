@@ -1,0 +1,45 @@
+#loadingPage{
+    position: fixed;
+    width: 100dvw;
+    height: 100dvh;
+    z-index: 9999;
+    background-color: var(--text);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    top: -100%;
+    transition: all 0.4s ease-in-out;
+}
+
+#loadingPage.open{
+    top: 0;
+}
+
+#loadingPage > svg{
+    width: 64px;
+    height: 64px;
+    min-width: 64px;
+    min-height: 64px;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
+}
+
+#loadingPage > svg *{
+    fill: white;
+}
+
+#loadingPage > p{
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
+}
+
+#loadingPage.open > svg,
+#loadingPage.open > p{
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 0.4s
+}

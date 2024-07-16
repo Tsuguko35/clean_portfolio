@@ -1,18 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../styles/contact.css";
 import { ContactForm } from "../components";
 import { MdAlternateEmail } from "react-icons/md";
 import { SlPhone } from "react-icons/sl";
 
 function Contact() {
+  useEffect(() => {
+    document.title = "Jazpher Carpio | Contact";
+  }, []);
   return (
     <div id="contact" className="contact page-container">
       <div className="wrapper">
-        <header>
+        <header className="animate">
           <p className="title">Contact</p>
           <p className="label">Let's Work Together</p>
         </header>
-        <div className="contact-container">
+        <div className="contact-container animate">
           <div className="details">
             <p>
               If you are interested in hiring me or working with me, please feel
