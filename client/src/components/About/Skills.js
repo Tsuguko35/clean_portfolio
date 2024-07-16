@@ -6,7 +6,11 @@ import { SiMysql, SiMongodb, SiPhpmyadmin, SiFirebase } from "react-icons/si";
 
 function Skills() {
   return (
-    <div id="skills-container" className="skills-container">
+    <div
+      id="skills-container"
+      className="skills-container animate"
+      style={{ animationDelay: "0.6s" }}
+    >
       <div className="skills">
         <div className="skill">
           <FaHtml5 />

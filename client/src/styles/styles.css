@@ -99,6 +99,23 @@ input[type="number"] {
   align-items: center;
 }
 
+.animate{
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: slide-down 1s ease-in-out forwards 0.3s;
+}
+
+@keyframes slide-down{
+  0%{
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media only screen and (max-width: 1024px){
   .wrapper{
     padding: 50px 50px;

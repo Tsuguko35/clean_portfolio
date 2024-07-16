@@ -5,7 +5,11 @@ import { projects } from "../../utils";
 
 function ProjectsGrid() {
   return (
-    <div id="projectsGrid" className="projectsGrid">
+    <div
+      id="projectsGrid"
+      className="projectsGrid animate"
+      style={{ animationDelay: "0.6s" }}
+    >
       {projects.map((project) => (
         <div className="project" key={project.name}>
           <Link to={project.url} className="thumbnail">
