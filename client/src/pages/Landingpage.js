@@ -6,7 +6,7 @@ import Typewriter from "typewriter-effect";
 import { GetWindowWidth } from "../utils";
 import { MdOutlineFileDownload } from "react-icons/md";
 import { FaFacebookSquare, FaLinkedin } from "react-icons/fa";
-
+import myCV from "../assets/Jazpher_Carpio_CV.pdf";
 function Landingpage() {
   const windowWidth = GetWindowWidth();
 
@@ -39,10 +39,14 @@ function Landingpage() {
             See My Projects!
           </Link>
           {windowWidth < 768 && (
-            <button className="action-button" to={"/Projects"}>
+            <a
+              href={myCV}
+              download="Jazpher Carpio - CV"
+              className="action-button"
+            >
               <MdOutlineFileDownload />
               Resume
-            </button>
+            </a>
           )}
         </div>
         <div className="socials">
