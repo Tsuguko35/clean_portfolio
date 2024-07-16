@@ -5,6 +5,7 @@ import "../styles/small-components/hamburgerIcon.css";
 import { Link, useLocation } from "react-router-dom";
 import { MdOutlineFileDownload } from "react-icons/md";
 import { GetWindowWidth } from "../utils";
+import myCV from "../assets/Jazpher_Carpio_CV.pdf";
 
 function Navbar() {
   const location = useLocation();
@@ -79,10 +80,14 @@ function Navbar() {
               </Link>
             </li>
             <li>
-              <div className="nav-item">
+              <a
+                href={myCV}
+                download="Jazpher Carpio - CV"
+                className="nav-item"
+              >
                 <MdOutlineFileDownload />
                 Resume
-              </div>
+              </a>
             </li>
           </ul>
         )}
@@ -148,10 +153,14 @@ function Navbar() {
                 </Link>
               </li>
               <li>
-                <div className="nav-item">
+                <a
+                  href={myCV}
+                  download="Jazpher Carpio - CV"
+                  className="nav-item"
+                >
                   <MdOutlineFileDownload />
                   Resume
-                </div>
+                </a>
               </li>
             </ul>
           </React.Fragment>

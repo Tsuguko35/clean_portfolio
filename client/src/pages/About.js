@@ -15,7 +15,7 @@ function About() {
           <div className="image">
             <img
               src="https://res.cloudinary.com/dkwgg59ur/image/upload/v1719105225/Portfolio_Files/hmppayoiaarwqdk43ks5.webp"
-              alt="Graduation Picture"
+              alt="Pfp"
             />
           </div>
         </header>
@@ -25,7 +25,7 @@ function About() {
         </div>
         <p className="paragraph">
           I am a passionate Full Stack Developer with expertise in HTML, CSS,
-          JavaScript, React.js,Node.js, PHP, MySQL, and MongoDB. My journey in
+          JavaScript, React.js, Node.js, PHP, MySQL, and MongoDB. My journey in
           web development has equipped me with a robust understanding of both
           front-end and back-end technologies, enabling me to create dynamic,
           responsive, and user-friendly web applications. With a strong
