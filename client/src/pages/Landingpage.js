@@ -7,7 +7,7 @@ import { GetWindowWidth } from "../utils";
 import { MdOutlineFileDownload } from "react-icons/md";
 import { FaFacebookSquare, FaLinkedin } from "react-icons/fa";
 import { DelayedLink } from "../components";
-import myCV from "../assets/Jazpher_Carpio_CV.pdf";
+import myCV from "../assets/Jazpher_Carpio_Resume.pdf";
 function Landingpage() {
   const windowWidth = GetWindowWidth();
 

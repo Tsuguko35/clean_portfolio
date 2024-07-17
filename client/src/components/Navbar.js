@@ -5,7 +5,7 @@ import "../styles/small-components/hamburgerIcon.css";
 import { useLocation } from "react-router-dom";
 import { MdOutlineFileDownload } from "react-icons/md";
 import { GetWindowWidth } from "../utils";
-import myCV from "../assets/Jazpher_Carpio_CV.pdf";
+import myCV from "../assets/Jazpher_Carpio_Resume.pdf";
 import DelayedLink from "./DelayedLink";
 
 function Navbar() {
