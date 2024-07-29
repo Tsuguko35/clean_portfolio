@@ -18,21 +18,21 @@ const projects = [
     techstack: ["React.js"],
   },
   {
+    url: "https://goarccorp.com/",
+    image:
+      "https://res.cloudinary.com/dkwgg59ur/image/upload/v1719018310/Portfolio_Files/Projects/oogetlao87n038uhq7lv.webp",
+    name: "Arc Corporation",
+    description:
+      "ARC Corporation specializes in delivering comprehensive business solutions tailored to meet the unique needs of modern enterprises. Our services encompass a wide range of areas including consulting, technology integration, and strategic planning. By leveraging industry expertise and cutting-edge technology, ARC Corporation helps businesses optimize their operations, improve efficiency, and drive growth. Our team of experienced professionals is dedicated to providing customized solutions that align with your business goals, ensuring sustainable success and a competitive edge in the market. Explore our services to discover how ARC Corporation can transform",
+    techstack: ["React.js"],
+  },
+  {
     url: "https://ark-web-solutions-development.vercel.app/",
     image:
       "https://res.cloudinary.com/dkwgg59ur/image/upload/v1720015647/Portfolio_Files/Projects/amnkjz9kqyqovib3r8t5.webp",
     name: "Ark Web Services",
     description:
       "Ark Web Services specializes in crafting custom websites tailored to meet the unique needs of businesses. Their expert team is dedicated to providing top-notch web design and development services that help clients establish a strong online presence. From sleek, modern designs to robust functionality, they ensure each website not only looks great but performs seamlessly. Whether for startups or established businesses, Ark Web Services brings visions to life and helps clients succeed in the digital world. Discover the difference with Ark Web Services and build something amazing.",
-    techstack: ["React.js"],
-  },
-  {
-    url: "https://arc-corp.vercel.app/",
-    image:
-      "https://res.cloudinary.com/dkwgg59ur/image/upload/v1719018310/Portfolio_Files/Projects/oogetlao87n038uhq7lv.webp",
-    name: "Arc Corporation",
-    description:
-      "ARC Corporation specializes in delivering comprehensive business solutions tailored to meet the unique needs of modern enterprises. Our services encompass a wide range of areas including consulting, technology integration, and strategic planning. By leveraging industry expertise and cutting-edge technology, ARC Corporation helps businesses optimize their operations, improve efficiency, and drive growth. Our team of experienced professionals is dedicated to providing customized solutions that align with your business goals, ensuring sustainable success and a competitive edge in the market. Explore our services to discover how ARC Corporation can transform",
     techstack: ["React.js"],
   },
 ];
