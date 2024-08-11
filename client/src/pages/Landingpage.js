@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import Typewriter from "typewriter-effect";
 import { GetWindowWidth } from "../utils";
 import { MdOutlineFileDownload } from "react-icons/md";
-import { FaFacebookSquare, FaLinkedin } from "react-icons/fa";
+import { FaFacebookSquare, FaLinkedin, FaGithubSquare } from "react-icons/fa";
 import { DelayedLink } from "../components";
 import myCV from "../assets/Jazpher_Carpio_Resume.pdf";
 function Landingpage() {
@@ -56,6 +56,9 @@ function Landingpage() {
           </Link>
           <Link to={"www.linkedin.com/in/jazphercarpio"} target="_blank">
             <FaLinkedin />
+          </Link>
+          <Link to={"https://github.com/Tsuguko35"} target="_blank">
+            <FaGithubSquare />
           </Link>
         </div>
       </div>
